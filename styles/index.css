@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "karla";
+  background-color: #f8f7f7;
+}
+
+.header {
+  padding: 20px 80px;
+  background-color: #4b99cf;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  justify-content: center;
+  margin: 0 auto;
+  color: #f7f7f9;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main__desktop {
+  width: 40%;
+  height: 500px;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px #4b99cf, 10px 10px #006091, 15px 15px #525558;
+}
+.main__desktop figure {
+  width: 100%;
+  height: 100%;
+}
+.main__desktop img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+.main__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  height: auto;
+  border: 5px solid #006091;
+  border-radius: 30px;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: transparent;
+}
+.main__info {
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 5px;
+  width: 270px;
+  border-radius: 5px;
+}
+.main__btn {
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mainHome {
+  display: flex;
+  background-color: #e5e7e7;
+}
+

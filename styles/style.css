@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "karla";
+  background-color: #d1cece;
+}
+
+.header {
+  padding: 20px 80px;
+  background-color: #4b99cf;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  justify-content: center;
+  margin: 0 auto;
+  color: #f7f7f9;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main__desktop {
+  width: 40%;
+  height: 500px;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px #4b99cf, 10px 10px #006091, 15px 15px #525558;
+}
+.main__desktop figure {
+  width: 100%;
+  height: 100%;
+}
+.main__desktop img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+}
+.main__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  height: auto;
+  border: 5px solid #006091;
+  border-radius: 30px;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: transparent;
+}
+.main__form button {
+  background-color: #008CBA;
+  font-size: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  width: 90px;
+  height: 20px;
+}
+.main__info {
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 5px;
+  width: 270px;
+  border-radius: 5px;
+}
+.main__btn {
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mainHome {
+  display: flex;
+  height: auto;
+  background-color: #fff;
+}
+.mainHome__sectleft {
+  width: 40%;
+  height: 100vh;
+  flex-direction: column;
+}
+.mainHome__profile {
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 234, 234);
+}
+.mainHome__profile figure {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+.mainHome__profile figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.mainHome__profile button {
+  background-color: #f75f5f;
+  font-size: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  width: 90px;
+  height: 20px;
+  margin-right: 20px;
+}
+.mainHome__edit {
+  display: none;
+}
+.mainHome__search {
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  background-color: rgb(241, 239, 239);
+  padding-top: 15px;
+}
+.mainHome__searchContainer {
+  display: flex;
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #fff;
+}
+.mainHome__searchContainer form {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 70%;
+}
+.mainHome__searchContainer form button {
+  cursor: pointer;
+  border: none;
+  margin-left: 30px;
+  background-color: transparent;
+}
+.mainHome__searchContainer form input {
+  background-color: transparent;
+  border: none;
+  width: 90%;
+  margin-left: 20px;
+  font-size: larger;
+}
+.mainHome__cardContainer {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.mainHome__cardContainer figure {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+.mainHome__cardContainer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.mainHome__cardContainer span {
+  margin-top: 10px;
+}
+.mainHome__card {
+  padding: 10px;
+  height: auto;
+  gap: 30px;
+  text-align: left;
+  flex-direction: column;
+}
+.mainHome__sectrigth {
+  width: 60%;
+  height: 100vh;
+}
+.mainHome__perfilrigth {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  background-color: rgb(236, 234, 234);
+  border-left: 1px solid rgb(192, 189, 189);
+}
+.mainHome__perfilrigth article {
+  display: flex;
+}
+.mainHome__perfilrigth figure {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.mainHome__perfilrigth figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.mainHome__perfilrigth li {
+  list-style: none;
+  margin-top: 20px;
+  line-height: 2px;
+}
+.mainHome__perfilrigth button {
+  cursor: pointer;
+  border: none;
+  margin-right: 30px;
+  background-color: transparent;
+}
+.mainHome .text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-weight: bold;
+  gap: 5px;
+}
+.mainHome p {
+  margin-left: 70px;
+  font-size: 1rem;
+}
+.mainHome__chat {
+  width: 100%;
+  height: 550px;
+  padding: 20px;
+  background-color: #f6fafc;
+}
+.mainHome__send {
+  display: flex;
+  height: 50px;
+  background-color: rgb(241, 239, 239);
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mainHome__send figure {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.mainHome__send input {
+  border: none;
+  width: 80%;
+  margin-left: 10px;
+  font-size: larger;
+  text-align: start;
+  border-radius: 20px;
+  height: 40px;
+}
+.mainHome__send button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.chat__message {
+  display: flex;
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  margin-left: 30px;
+  background-color: rgb(241, 239, 239);
+  gap: 10px;
+  font-size: medium;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+  main__form {
+    width: 90%;
+    height: 90%;
+  }
+  .mainHome__sectrigth {
+    display: none;
+  }
+  .mainHome__sectleft {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$fonts: 'karla';
+$color-btns: hsl(155, 93%, 57%);
+$colorbtnblue: #008CBA;
+$colorbtnred: #f75f5f;
+@import 'universals';
+
+@mixin paddings ($t) {
+    padding: $t*1px $t*4px;
+}
+
+@mixin imgPerfil() {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+@mixin containerSize($height) {
+    width: 100%;
+    height: $height;
+    align-items: center;
+}
+
+@mixin button ($colorbtn) {
+    background-color: $colorbtn;
+    font-size: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    width: 90px;
+    height: 20px;
+}
+
+body {
+    font-family: $fonts;
+    background-color: #d1cece;
+}
+
+.header {
+    @include paddings(20);
+    background-color: #4b99cf;
+    align-items: center;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        justify-content: center;
+        margin: 0 auto;
+        color: #f7f7f9;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__desktop {
+        width: 40%;
+        height: 500px;
+        justify-content: center;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 5px 5px #4b99cf, 10px 10px #006091, 15px 15px #525558;
+
+        figure {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 300px;
+        height: auto;
+        border: 5px solid #006091;
+        border-radius: 30px;
+        align-items: center;
+        @include paddings(20);
+        background-color: transparent;
+
+        button {
+            @include button($colorbtnblue);
+        }
+    }
+
+    &__info {
+        font-size: 1.2rem;
+        border: none;
+        padding: 10px 5px;
+        width: 270px;
+        border-radius: 5px;
+    }
+
+    &__btn {
+        border-radius: 20px;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+}
+
+.mainHome {
+    display: flex;
+    height: auto;
+    background-color: #fff;
+
+    &__sectleft {
+        width: 40%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    &__profile {
+        @include containerSize(90px);
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(236, 234, 234);
+
+        figure {
+            @include imgPerfil;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        button {
+            @include button($colorbtnred);
+            margin-right: 20px;
+        }
+    }
+
+    &__edit {
+        display: none;
+    }
+
+    &__search {
+        @include containerSize(60px);
+        background-color: rgb(241, 239, 239);
+        padding-top: 15px;
+    }
+
+    &__searchContainer {
+        display: flex;
+        width: 90%;
+        height: 40px;
+        margin-left: 20px;
+        border-radius: 20px;
+        align-items: center;
+        background-color: #fff;
+
+        form{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 70%;
+            button {
+                cursor: pointer;
+                border: none;
+                margin-left: 30px;
+                background-color: transparent;
+            }
+    
+            input {
+                background-color: transparent;
+                border: none;
+                width: 90%;
+                margin-left: 20px;
+                font-size: larger;
+            }
+        }
+       
+    }
+
+
+    &__cardContainer {
+        @include containerSize(auto);
+        background-color: #fff;
+        flex-direction: column;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        figure {
+            
+            @include imgPerfil;
+
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+        }
+        span{
+            margin-top: 10px;
+        }
+    }
+
+    &__card {
+        padding: 10px;
+        height: auto;
+        gap: 30px;
+        text-align: left; 
+        flex-direction: column;     
+    }
+   
+    &__sectrigth {
+        width: 60%;
+        height: 100vh;
+       
+    }
+
+    &__perfilrigth {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        background-color: rgb(236, 234, 234);
+        border-left: 1px solid rgb(192, 189, 189);
+
+        article {
+            display: flex;
+        }
+
+        figure {
+            @include imgPerfil;
+            margin-top: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+        }
+
+        li {
+            list-style: none;
+            margin-top: 20px;
+            line-height: 2px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            margin-right: 30px;
+            background-color: transparent;
+        }
+    }
+    .text{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: bold;
+        gap: 5px;
+    }
+    p{
+        margin-left: 70px;
+        font-size: 1rem;
+    }
+    &__chat {
+        width: 100%;
+        height: 550px;
+        padding: 20px;
+        background-color: #f6fafc;
+    }
+
+    &__send {
+        display: flex;
+        height: 50px;
+        background-color: rgb(241, 239, 239);
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-end;
+
+        figure {
+            display: flex;
+            gap: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+
+        input {
+            border: none;
+            width: 80%;
+            margin-left: 10px;
+            font-size: larger;
+            text-align: start;
+            border-radius: 20px;
+            height: 40px;
+        }
+        button{
+            cursor: pointer;
+            border: none;
+            background-color: transparent;  
+        }
+    }
+
+}
+.chat__message{
+    display: flex;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    margin-left: 30px;
+    background-color: rgb(241, 239, 239);
+    gap: 10px;
+    font-size: medium;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 700px) {
+    .header{
+        display: none;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+       padding: 10px;
+    }
+    main__form{
+        width: 90%;
+        height: 90%;
+        
+    }
+    .mainHome__sectrigth{
+        display: none;
+    }
+    .mainHome__sectleft{
+        width: 100%;
+        height: 100%;
+
+    }
+}

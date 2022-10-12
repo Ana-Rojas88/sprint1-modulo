@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Giros</title>
+</head>
+<body>
+
+    <main class="main">
+    
+        <form class="main__form" id="form__login">
+            <h2>Registrarse</h2>
+            <input class="main__info" type="text" id="name" placeholder="Ingrese su nombre" required>
+            <input class="main__info" type="number" id="cellphone" placeholder="Ingrese su número de celular" required>
+            <input class="main__info" type="password" id="password" placeholder="Ingrese una contraseña" required>
+            <input class="main__info" type="url" id="url" placeholder="Ingrese una imagen de perfil" required>
+            <textarea class="main__info" id="phrase" rows="5" cols="15" placeholder="Ingrese una frase" required></textarea>
+            <button type="submit" class="main__btn">Registrarse</button>
+            <span>Ya tienes cuenta? <a href="../index.html">Inicia Sesión</a></span>
+        </form>
+    </main>
+    
+    <script src="../scripts/register.js" type="module"></script>
+</body>
+</html>

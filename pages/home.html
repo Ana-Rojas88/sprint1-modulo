@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.0.4/luxon.min.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <main class="mainHome">
+        <section class="mainHome__sectleft">
+            <div  class="mainHome__profile">
+                <figure id="image">
+                </figure>
+                <button id="btnCloseSession">Cerrar Sesión</button>
+                <form class="mainHome__edit" action="">
+                    <input type="url" placeholder="Editar imagen">
+                    <input type="text" placeholder="Editar nombre">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="mainHome__search">
+                <div class="mainHome__searchContainer">
+                    <form id="form_id">
+                        <input type="text" placeholder="Buscar o iniciar un nuevo chat">
+                        <button><img src="../icons/search.svg" alt=""></button>
+                    </form>
+                </div>
+
+            </div>
+            <div id="messages" class="mainHome__cardContainer">
+                <article class="mainHome__card" id="user">
+
+                </article>
+            </div>
+        </section>
+        <section class="mainHome__sectrigth">
+            <div class="mainHome__perfilrigth">
+                <article>
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2014/12/16/22/25/woman-570883__340.jpg"
+                            alt="Imagen de perfil">
+                    </figure>
+                    <ul>
+                        <li>Ana Rojas</li>
+                        <li>EN Línea</li>
+                    </ul>
+                </article>
+                <button>
+                    <img src="../icons/search.svg" alt="Imagen buscar">
+                </button>
+            </div>
+            <div class="mainHome__chat" id="chat">
+               
+            </div>
+
+            <div class="mainHome__send">
+                <figure>
+                    <img src="../icons/smile.svg" alt="">
+                    <img src="../icons/paperclip.svg" alt="">
+                </figure>
+                <input type="text" placeholder="Escribe un mensaje">
+                <button><img src="../icons/send.svg" alt=""></button>
+                <figure>
+                    <img src="../icons/mic.svg" alt="">
+                </figure>
+            </div>
+        </section>
+
+    </main>
+    <script src="../scripts/home.js" type="module"></script>
+</body>
+
+</html>
